@@ -56,7 +56,7 @@ def login():
             return redirect("/")
         else:
             # 로그인이 실패한 경우
-            return "<script>alert('join fail'); history.back(-1);</script>"
+            return "<script>alert('login fail'); history.back(-1);</script>"
 
     if 'id' in session:
         return redirect("/")
